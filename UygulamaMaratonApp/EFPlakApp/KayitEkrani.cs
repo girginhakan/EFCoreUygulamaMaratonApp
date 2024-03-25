@@ -34,7 +34,7 @@ namespace EFPlakApp
                 kullanici.Adi = ad_textBox.Text;
                 kullanici.Soyadi = soyAd_textbox.Text;
                 kullanici.KullaniciAdi = kullaniciAd_textbox.Text;
-                kullanici.Sifre = sifre_textbox.Text;
+                kullanici.Sifre = Program.Sha256Hash(sifre_textbox.Text);
 
                 
                 MaratonAppDbContext.Kullanicilar.Add(kullanici);
