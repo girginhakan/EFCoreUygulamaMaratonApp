@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaratonApp.DAL.Context;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,23 @@ namespace EFPlakApp
 {
     public partial class GirisFormu : Form
     {
+        MaratonAppDbContext db= new MaratonAppDbContext();
         public GirisFormu()
         {
             InitializeComponent();
+        }
+
+        private void giris_buton_Click(object sender, EventArgs e)
+        {
+            var kullanici = db.Kullanicilar.FirstOrDefault(k => k.KullaniciAdi == email_textBox.Text);
+            var kullaniciSifre = db.Kullanicilar.FirstOrDefault(k => k.Sifre == Program.Sha256Hash(sifre_textBox.Text));
+          
+            if (kullanici!=null&&kullaniciSifre!=null)
+            {
+                AnaSayfa anaSayfa = new AnaSayfa();
+                anaSayfa.Show();
+                this.Hide();
+            }
         }
     }
 }
