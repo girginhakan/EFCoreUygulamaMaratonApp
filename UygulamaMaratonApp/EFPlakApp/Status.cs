@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MaratonApp.DAL.Enums
+namespace EFPlakApp
 {
-    public enum Status
+    public enum  Status
     {
-        Created = 1,
-        Updated = 2,
-        Deleted = 3
+        SatisiDevamEdiyor=1,
+        SatisiDevamEtmiyor=2
+
     }
 }

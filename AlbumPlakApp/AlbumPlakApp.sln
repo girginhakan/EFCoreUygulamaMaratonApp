@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFPlakApp", "EFPlakApp\EFPlakApp.csproj", "{DC51C8F6-9C9C-4B6F-AF0A-97DDB8F77F93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlbumPlakApp", "AlbumPlakApp\AlbumPlakApp.csproj", "{B89B09CB-4D3E-4372-910D-42D25E27B308}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DC51C8F6-9C9C-4B6F-AF0A-97DDB8F77F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC51C8F6-9C9C-4B6F-AF0A-97DDB8F77F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC51C8F6-9C9C-4B6F-AF0A-97DDB8F77F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC51C8F6-9C9C-4B6F-AF0A-97DDB8F77F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89B09CB-4D3E-4372-910D-42D25E27B308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89B09CB-4D3E-4372-910D-42D25E27B308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89B09CB-4D3E-4372-910D-42D25E27B308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89B09CB-4D3E-4372-910D-42D25E27B308}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B648DB21-801F-4470-B45D-5786E1D73D7C}
+		SolutionGuid = {E2CA2F55-7ED2-471A-A9DD-72EEABB853AC}
 	EndGlobalSection
 EndGlobal
