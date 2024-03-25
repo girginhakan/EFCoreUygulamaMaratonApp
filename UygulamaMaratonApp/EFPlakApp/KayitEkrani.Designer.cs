@@ -31,13 +31,13 @@
             ad_textBox = new TextBox();
             label2 = new Label();
             label1 = new Label();
-            textBox1 = new TextBox();
+            soyAd_textbox = new TextBox();
             label3 = new Label();
-            textBox2 = new TextBox();
+            kullaniciAd_textbox = new TextBox();
             label4 = new Label();
-            textBox3 = new TextBox();
+            sifre_textbox = new TextBox();
             label5 = new Label();
-            textBox4 = new TextBox();
+            sifreTekrari_textbox = new TextBox();
             label6 = new Label();
             giris_buton = new Button();
             kayit_buton = new Button();
@@ -70,14 +70,14 @@
             label1.TabIndex = 24;
             label1.Text = "Kullanici Kayit Ekrani";
             // 
-            // textBox1
+            // soyAd_textbox
             // 
-            textBox1.Location = new Point(268, 189);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(275, 34);
-            textBox1.TabIndex = 25;
+            soyAd_textbox.Location = new Point(268, 189);
+            soyAd_textbox.Margin = new Padding(3, 4, 3, 4);
+            soyAd_textbox.Multiline = true;
+            soyAd_textbox.Name = "soyAd_textbox";
+            soyAd_textbox.Size = new Size(275, 34);
+            soyAd_textbox.TabIndex = 25;
             // 
             // label3
             // 
@@ -88,14 +88,14 @@
             label3.TabIndex = 26;
             label3.Text = "Kullanici Adi :";
             // 
-            // textBox2
+            // kullaniciAd_textbox
             // 
-            textBox2.Location = new Point(268, 239);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(275, 34);
-            textBox2.TabIndex = 27;
+            kullaniciAd_textbox.Location = new Point(268, 239);
+            kullaniciAd_textbox.Margin = new Padding(3, 4, 3, 4);
+            kullaniciAd_textbox.Multiline = true;
+            kullaniciAd_textbox.Name = "kullaniciAd_textbox";
+            kullaniciAd_textbox.Size = new Size(275, 34);
+            kullaniciAd_textbox.TabIndex = 27;
             // 
             // label4
             // 
@@ -106,14 +106,14 @@
             label4.TabIndex = 28;
             label4.Text = "Soyadiniz :";
             // 
-            // textBox3
+            // sifre_textbox
             // 
-            textBox3.Location = new Point(268, 290);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(275, 34);
-            textBox3.TabIndex = 29;
+            sifre_textbox.Location = new Point(268, 290);
+            sifre_textbox.Margin = new Padding(3, 4, 3, 4);
+            sifre_textbox.Multiline = true;
+            sifre_textbox.Name = "sifre_textbox";
+            sifre_textbox.Size = new Size(275, 34);
+            sifre_textbox.TabIndex = 29;
             // 
             // label5
             // 
@@ -124,14 +124,14 @@
             label5.TabIndex = 30;
             label5.Text = "Sifre :";
             // 
-            // textBox4
+            // sifreTekrari_textbox
             // 
-            textBox4.Location = new Point(268, 342);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(275, 34);
-            textBox4.TabIndex = 31;
+            sifreTekrari_textbox.Location = new Point(268, 342);
+            sifreTekrari_textbox.Margin = new Padding(3, 4, 3, 4);
+            sifreTekrari_textbox.Multiline = true;
+            sifreTekrari_textbox.Name = "sifreTekrari_textbox";
+            sifreTekrari_textbox.Size = new Size(275, 34);
+            sifreTekrari_textbox.TabIndex = 31;
             // 
             // label6
             // 
@@ -161,6 +161,7 @@
             kayit_buton.TabIndex = 33;
             kayit_buton.Text = "KAYIT OL";
             kayit_buton.UseVisualStyleBackColor = true;
+            kayit_buton.Click += kayit_buton_Click;
             // 
             // KayitEkrani
             // 
@@ -169,13 +170,13 @@
             ClientSize = new Size(692, 516);
             Controls.Add(giris_buton);
             Controls.Add(kayit_buton);
-            Controls.Add(textBox4);
+            Controls.Add(sifreTekrari_textbox);
             Controls.Add(label6);
-            Controls.Add(textBox3);
+            Controls.Add(sifre_textbox);
             Controls.Add(label5);
-            Controls.Add(textBox2);
+            Controls.Add(kullaniciAd_textbox);
             Controls.Add(label4);
-            Controls.Add(textBox1);
+            Controls.Add(soyAd_textbox);
             Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(ad_textBox);
@@ -191,13 +192,13 @@
         private TextBox ad_textBox;
         private Label label2;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox soyAd_textbox;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox kullaniciAd_textbox;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox sifre_textbox;
         private Label label5;
-        private TextBox textBox4;
+        private TextBox sifreTekrari_textbox;
         private Label label6;
         private Button giris_buton;
         private Button kayit_buton;
