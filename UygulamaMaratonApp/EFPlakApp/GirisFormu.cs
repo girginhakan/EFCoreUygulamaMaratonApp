@@ -29,6 +29,7 @@ namespace EFPlakApp
                 AnaSayfa anaSayfa = new AnaSayfa();
                 anaSayfa.Show();
                 this.Hide();
+                MessageBox.Show("Hoşgeldiniz.");
             }
         }
 

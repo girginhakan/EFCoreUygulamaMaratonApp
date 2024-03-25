@@ -151,6 +151,7 @@
             giris_buton.TabIndex = 34;
             giris_buton.Text = "GİRİŞ";
             giris_buton.UseVisualStyleBackColor = true;
+            giris_buton.Click += giris_buton_Click;
             // 
             // kayit_buton
             // 
