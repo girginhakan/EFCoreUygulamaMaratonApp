@@ -15,5 +15,9 @@ namespace EFPlakApp
 
 
         List<Album> Albumler { get; set; }
+        public override string ToString()
+        {
+            return SanatciAdi + " " + SanatciSoyadi;
+        }
     }
 }
