@@ -13,7 +13,7 @@ namespace EFPlakApp
 {
     public partial class GirisFormu : Form
     {
-        MaratonAppDbContext db= new MaratonAppDbContext();
+        MaratonAppDbContext db = new MaratonAppDbContext();
         public GirisFormu()
         {
             InitializeComponent();
@@ -23,13 +23,20 @@ namespace EFPlakApp
         {
             var kullanici = db.Kullanicilar.FirstOrDefault(k => k.KullaniciAdi == email_textBox.Text);
             var kullaniciSifre = db.Kullanicilar.FirstOrDefault(k => k.Sifre == Program.Sha256Hash(sifre_textBox.Text));
-          
-            if (kullanici!=null&&kullaniciSifre!=null)
+
+            if (kullanici != null && kullaniciSifre != null)
             {
                 AnaSayfa anaSayfa = new AnaSayfa();
                 anaSayfa.Show();
                 this.Hide();
             }
+        }
+
+        private void kayit_buton_Click(object sender, EventArgs e)
+        {
+            KayitEkrani kayitEkrani = new KayitEkrani();
+            kayitEkrani.Show();
+            this.Hide();
         }
     }
 }

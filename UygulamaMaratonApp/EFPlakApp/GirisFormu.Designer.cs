@@ -58,6 +58,7 @@
             kayit_buton.TabIndex = 18;
             kayit_buton.Text = "KAYIT OL";
             kayit_buton.UseVisualStyleBackColor = true;
+            kayit_buton.Click += kayit_buton_Click;
             // 
             // sifre_textBox
             // 
