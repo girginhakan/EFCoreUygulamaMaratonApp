@@ -16,7 +16,9 @@ namespace EFPlakApp
         public double IndirimOrani { get; set; }
 
         public Status Status { get; set; }
-        public int SanatciId { get; set; }
+        public int? SanatciId { get; set; }
         public Sanatci Sanatci { get; set; }
+
+
     }
 }
