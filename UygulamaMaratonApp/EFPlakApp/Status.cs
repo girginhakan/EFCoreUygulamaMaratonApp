@@ -8,5 +8,7 @@ namespace EFPlakApp
 {
     public enum  Status
     {
+        DevamEdiyor=1,
+        DevamEtmiyor=2
     }
 }
