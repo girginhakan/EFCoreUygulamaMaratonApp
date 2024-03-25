@@ -20,7 +20,15 @@ namespace EFPlakApp
         {
             dB = new MaratonAppDbContext();
             InitializeComponent();
+            //foreach (var item in dB.Sanatcilar)
+            //{
+            //    sanatciAdi_comboBox.Items.Add(item.SanatciAdi);
+            //}
+
+            sanatciAdi_comboBox.DataSource = dB.Sanatcilar.ToList();
+            durumu_textbox.DataSource = Enum.GetNames(typeof(Status));
             
+
         }
 
         private void AnaSayfa_Load(object sender, EventArgs e)
@@ -71,8 +79,9 @@ namespace EFPlakApp
             dataGridView1.DataSource = indirimdekiAlbumler;
         }
 
-
-
-
+        private void cikisYap_buton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

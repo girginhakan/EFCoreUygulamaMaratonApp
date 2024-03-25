@@ -70,6 +70,7 @@
             cikisYap_buton.TabIndex = 17;
             cikisYap_buton.Text = "Çıkış Yap";
             cikisYap_buton.UseVisualStyleBackColor = true;
+            cikisYap_buton.Click += cikisYap_buton_Click;
             // 
             // ekle_buton
             // 
