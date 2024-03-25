@@ -111,6 +111,7 @@
             liste1_buton.TabIndex = 28;
             liste1_buton.Text = "Liste1";
             liste1_buton.UseVisualStyleBackColor = true;
+            liste1_buton.Click += liste1_buton_Click;
             // 
             // liste2_buton
             // 
@@ -121,6 +122,7 @@
             liste2_buton.TabIndex = 29;
             liste2_buton.Text = "Liste2";
             liste2_buton.UseVisualStyleBackColor = true;
+            liste2_buton.Click += liste2_buton_Click;
             // 
             // liste3_buton
             // 
@@ -131,6 +133,7 @@
             liste3_buton.TabIndex = 30;
             liste3_buton.Text = "Liste3";
             liste3_buton.UseVisualStyleBackColor = true;
+            liste3_buton.Click += liste3_buton_Click;
             // 
             // liste4_buton
             // 
@@ -141,6 +144,7 @@
             liste4_buton.TabIndex = 31;
             liste4_buton.Text = "Liste4";
             liste4_buton.UseVisualStyleBackColor = true;
+            liste4_buton.Click += liste4_buton_Click;
             // 
             // liste5_buton
             // 
@@ -151,6 +155,7 @@
             liste5_buton.TabIndex = 32;
             liste5_buton.Text = "Liste5";
             liste5_buton.UseVisualStyleBackColor = true;
+            liste5_buton.Click += liste5_buton_Click;
             // 
             // guncelle_buton
             // 
@@ -261,6 +266,7 @@
             Name = "AnaSayfa";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AnaSayfa";
+            Load += AnaSayfa_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
