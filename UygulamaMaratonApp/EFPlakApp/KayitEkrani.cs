@@ -26,7 +26,7 @@ namespace EFPlakApp
 
         private void kayit_buton_Click(object sender, EventArgs e)
         {
-           
+
 
             if (PasswordControl())
             {
@@ -36,13 +36,13 @@ namespace EFPlakApp
                 kullanici.KullaniciAdi = kullaniciAd_textbox.Text;
                 kullanici.Sifre = Program.Sha256Hash(sifre_textbox.Text);
 
-                
+
                 MaratonAppDbContext.Kullanicilar.Add(kullanici);
                 MaratonAppDbContext.SaveChanges();
 
                 MessageBox.Show("Kullanıcı başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                
+
                 ad_textBox.Text = "";
                 soyAd_textbox.Text = "";
                 kullaniciAd_textbox.Text = "";
@@ -61,7 +61,7 @@ namespace EFPlakApp
 
         private bool PasswordControl()
         {
-            string psswrd =sifre_textbox.Text;
+            string psswrd = sifre_textbox.Text;
 
             if (psswrd != null && psswrd.Length >= 8)
             {
@@ -100,8 +100,11 @@ namespace EFPlakApp
             }
         }
 
-
-
-
+        private void giris_buton_Click(object sender, EventArgs e)
+        {
+            GirisFormu girisFormu = new GirisFormu();
+            girisFormu.Show();
+            this.Hide();
+        }
     }
 }

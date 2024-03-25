@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,6 +23,32 @@ namespace MaratonApp.DAL.Context
         {
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer("Data Source=HAKANPC;Initial Catalog=AlbumSanatciDb;Integrated Security=true;Encrypt=False");
+
+            
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Sanatci>().HasData(
+                new Sanatci()
+                {
+                    Id = 1,
+                    SanatciAdi="Hakan",
+                    SanatciSoyadi="Grgn"
+                },
+                new Sanatci()
+                {
+                    Id = 2,
+                    SanatciAdi = "Hivda",
+                    SanatciSoyadi = "Krhn"
+                },
+                new Sanatci()
+                {
+                    Id = 3,
+                    SanatciAdi = "Burak",
+                    SanatciSoyadi = "Gnc"
+                }
+                );
         }
     }
 }
