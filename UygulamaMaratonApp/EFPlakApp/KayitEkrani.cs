@@ -28,14 +28,33 @@ namespace EFPlakApp
         {
 
 
+            Kullanici kullanici = new Kullanici();
+
+            if (!AlanKontrol(ad_textBox.Text))
+            {
+                MessageBox.Show("Lütfen adinizi giriniz.");
+                return;
+            }
+            kullanici.Adi = ad_textBox.Text;
+
+            if (!AlanKontrol(soyAd_textbox.Text))
+            {
+                MessageBox.Show("Lütfen soyadinizi giriniz.");
+                return;
+            }
+            kullanici.Soyadi = soyAd_textbox.Text;
+
+            if (!AlanKontrol(kullaniciAd_textbox.Text))
+            {
+                MessageBox.Show("Lütfen kullanici adinizi giriniz.");
+                return;
+            }
+            kullanici.KullaniciAdi = kullaniciAd_textbox.Text;
+
+
             if (PasswordControl())
             {
-                Kullanici kullanici = new Kullanici();
-                kullanici.Adi = ad_textBox.Text;
-                kullanici.Soyadi = soyAd_textbox.Text;
-                kullanici.KullaniciAdi = kullaniciAd_textbox.Text;
                 kullanici.Sifre = Program.Sha256Hash(sifre_textbox.Text);
-
 
                 MaratonAppDbContext.Kullanicilar.Add(kullanici);
                 MaratonAppDbContext.SaveChanges();
@@ -56,6 +75,13 @@ namespace EFPlakApp
             }
 
 
+        }
+
+        public static bool AlanKontrol(string alan)
+        {
+            if (string.IsNullOrWhiteSpace(alan))
+                return false;
+            return true;
         }
 
 

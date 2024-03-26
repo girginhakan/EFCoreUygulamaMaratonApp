@@ -13,7 +13,7 @@ namespace EFPlakApp
         public string AlbumAdi { get; set; }
         public DateTime CikisTarihi { get; set; }
         public double Fiyat { get; set; }
-        public double IndirimOrani { get; set; }
+        public double? IndirimOrani { get; set; }
 
         public Status Status { get; set; }
         public int? SanatciId { get; set; }
