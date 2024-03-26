@@ -5,6 +5,7 @@ namespace EFPlakApp
 {
     internal static class Program
     {
+        public static Kullanici AktifKullanici { get; set; }
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
